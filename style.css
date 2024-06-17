@@ -1,0 +1,63 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+@import url('./css/reset.css');
+:root {
+  --font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-image: url('./images/background/mob/bg-mob-effects.png'),
+    url('./images/background/tab/bg-tab-today-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: top;
+  min-height: 100vh;
+  @media only screen and (min-width: 768px) {
+    background-image: url('./images/background/tab/bg-tab-effects.png'),
+      url('./images/background/tab/bg-tab-today-1x.jpg');
+    @media only screen and (min-width: 1280px) {
+      background-image: url('./images/background/desc/bg-desc-effects.png'),
+        url('./images/background/desc/bg-desc-today-1x.jpg');
+    }
+  }
+}
+
+header {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input-div {
+  position: relative;
+  width: fit-content;
+}
+.search-location-icon {
+  position: absolute;
+  left: 20px;
+  top: 13px;
+}
+.search-input {
+  outline: none;
+  padding: 16px 58px;
+  border-radius: 30px;
+  border: none;
+  max-width: 280px;
+  max-height: 48px;
+  &::placeholder {
+    opacity: 1;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: #000;
+  }
+}
+.search-star-icon {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
