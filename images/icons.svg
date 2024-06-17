@@ -1,7 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="icon-arrow" viewBox="0 0 22 32">
-<path stroke-width="4.8" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+<symbol id="icon-arrow" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="14" cy="14" r="14" fill="white" fill-opacity="0.2"/>
+<path d="M12 11L16 15L12 19" stroke="black" stroke-width="1.5"/>
 </symbol>
 <symbol id="icon-location" viewBox="0 0 32 32">
 <path fill="none" stroke="#aeb3b9" stroke-width="2.9091" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color1, #aeb3b9)" d="M27.636 16c0 6.427-5.21 11.636-11.636 11.636s-11.636-5.21-11.636-11.636c0-6.427 5.21-11.636 11.636-11.636s11.636 5.21 11.636 11.636z"></path>

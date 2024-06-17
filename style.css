@@ -6,18 +6,40 @@
 
 body {
   font-family: var(--font-family);
-  background-image: url('./images/background/mob/bg-mob-effects.png'),
+  background-image: url('./images/background/mob/bg-mob-effects-left.png'),
+    url('./images/background/mob/bg-mob-effects-right.png'),
     url('./images/background/tab/bg-tab-today-1x.jpg');
   background-repeat: no-repeat;
-  background-size: cover, cover;
-  background-position: top;
+  background-size: auto, auto, cover;
+  background-position: left top, right top, top;
   min-height: 100vh;
   @media only screen and (min-width: 768px) {
-    background-image: url('./images/background/tab/bg-tab-effects.png'),
+    background-image: url('./images/background/tab/bg-tab-effects-left.png'),
+      url('./images/background/tab/bg-tab-effects-right.png'),
       url('./images/background/tab/bg-tab-today-1x.jpg');
     @media only screen and (min-width: 1280px) {
-      background-image: url('./images/background/desc/bg-desc-effects.png'),
+      background-image: url('./images/background/desc/bg-desc-effects-left.png'),
+        url('./images/background/desc/bg-desc-effects-right.png'),
         url('./images/background/desc/bg-desc-today-1x.jpg');
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  body {
+    background-image: url('./images/background/mob/bg-mob-effects-left.png'),
+      url('./images/background/mob/bg-mob-effects-right.png'),
+      url('./images/background/tab/bg-tab-today-2x.jpg');
+    @media only screen and (min-width: 768px) {
+      background-image: url('./images/background/tab/bg-tab-effects-left.png'),
+        url('./images/background/tab/bg-tab-effects-right.png'),
+        url('./images/background/tab/bg-tab-today-2x.jpg');
+      @media only screen and (min-width: 1280px) {
+        background-image: url('./images/background/desc/bg-desc-effects-left.png'),
+          url('./images/background/desc/bg-desc-effects-right.png'),
+          url('./images/background/desc/bg-desc-today-2x.jpg');
+      }
     }
   }
 }
@@ -60,4 +82,45 @@ header {
   position: absolute;
   right: 20px;
   top: 13px;
+}
+
+.swiper {
+  width: 160px;
+  height: 48px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.swiper-next {
+  width: fit-content;
+  z-index: 1000;
+}
+
+.swiper-general-wrap {
+  gap: 65px;
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 12px;
+  max-width: 72px;
+  max-height: 28px;
+  background: rgba(16, 33, 54, 0.5);
+}
+
+.span-city-name {
+  display: block;
 }
